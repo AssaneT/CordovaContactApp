@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyContact</title>
+    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div id="contact-list" data-role="page">
+        <div data-role="header">
+            <h1>My Contact</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <a href="#" data-role="button" data-icon="plus" data-iconpos="right">Ajouter</a>
+            <ul id="contactList" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Rechercher un contact">
+                <!-- <li>
+                    <a href="#contact-show">
+                        <img src="img/avatarStandard.png" alt="">
+                        <h1>Mamadou Ndiaye</h1>
+                        <p>77 123 45 67</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/avatarStandard.png" alt="">
+                        <h1>Khady Fall</h1>
+                        <p>77 123 45 67</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/avatarStandard.png" alt="">
+                        <h1>Marieme Faye</h1>
+                        <p>77 123 45 67</p>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>AT &copy; 2023 </h1>
+        </div>
+    </div>
+    <div id="contact-show" data-role="page">
+        <div data-role="header">
+            <a data-role="back" data-icon="home" data-iconpos="notext">Précédent</a>
+            <h1>My Contact</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <div data-role="header">
+                <a href="#" data-icon="edit" data-iconpos="notext">Modifier</a>
+                <h1>Détail contact</h1>
+                <a href="#" data-icon="delete" data-iconpos="notext">Supprimer</a>
+            </div>
+            <ul id="contactDetail" data-role="listview" data-inset="true">
+                
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>AT &copy; 2023 </h1>
+        </div>
+    </div>
+    
+</body>
+</html>
