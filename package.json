@@ -20,6 +20,9 @@
     "platforms": [
       "android",
       "browser"
-    ]
+    ],
+    "plugins": {
+      "cordova-plugin-contacts": {}
+    }
   }
 }
